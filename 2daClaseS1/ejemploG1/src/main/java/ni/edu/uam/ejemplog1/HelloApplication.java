@@ -24,7 +24,6 @@ public class HelloApplication extends Application {
         root.setAlignment(Pos.CENTER);
         root.setStyle("-fx-background-color: #ffe6f0;");
 
-        // Pantalla de la calculadora
         display = new TextField("0");
         display.setEditable(false);
         display.setAlignment(Pos.CENTER_RIGHT);
@@ -40,7 +39,6 @@ public class HelloApplication extends Application {
                         "-fx-background-radius: 8px;"
         );
 
-        // Cuadrícula de botones
         GridPane grid = new GridPane();
         grid.setHgap(10);
         grid.setVgap(10);
@@ -71,7 +69,6 @@ public class HelloApplication extends Application {
                     grid.add(btn, col, fila);
                 }
 
-                // Estilos por tipo de botón
                 if (texto.matches("[0-9]") || texto.equals(".")) {
                     btn.setStyle("-fx-background-color: #ffb3d9; -fx-text-fill: #660033; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 8px;");
                 } else if (texto.matches("[+\\-*/=]")) {

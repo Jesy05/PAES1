@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" spacing="12.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam._raclases1p1.StudentController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <!-- Título Principal -->
+    <Label text="Universidad Americana" textFill="#05abc0">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+        <VBox.margin>
+            <Insets top="10.0" />
+        </VBox.margin>
+    </Label>
+
+    <!-- Subtítulo -->
+    <Label text="Registro de Notas">
+        <font>
+            <Font size="13.0" />
+        </font>
+        <VBox.margin>
+            <Insets bottom="5.0" />
+        </VBox.margin>
+    </Label>
+
+    <!-- Tarjeta / Formulario con bordes redondeados -->
+    <VBox alignment="TOP_LEFT" maxWidth="260.0" spacing="6.0" style="-fx-border-color: #5c9eb8; -fx-border-radius: 10; -fx-border-width: 1.5; -fx-background-color: transparent;">
+        <padding>
+            <Insets bottom="15.0" left="12.0" right="12.0" top="12.0" />
+        </padding>
+
+        <Label text="Nombre del Estudiante">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+        <TextField />
+
+        <Label text="Calificación">
+            <font>
+                <Font size="12.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="6.0" />
+            </VBox.margin>
+        </Label>
+        <TextField />
+
+        <Button fx:id="btnGuardar" onAction="#onHelloButtonClick" text="Guardar">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Button>
+    </VBox>
+</VBox>
